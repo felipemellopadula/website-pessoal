@@ -44,7 +44,6 @@
       align-items: center;
       justify-content: center;
       margin-bottom: 1rem;
-      overflow: hidden;
 
       @media (min-width: 768px) {
         width: 45%;
@@ -53,9 +52,12 @@
       }
 
       img {
-        width: 100%;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         height: auto;
-        border-radius: 50%;
       }
     }
 
