@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   width: 100vw;
-  max-width: 100%;
   height: 100vh;
   align-items: center;
   justify-content: center;
@@ -22,7 +21,7 @@
 
   .imageTexts {
     width: 100%;
-    max-width: 100%;
+    max-width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,6 +37,7 @@
 
     .imageProfile {
       width: 100%;
+      height: 100%;
       max-width: 20rem;
       display: flex;
       flex-direction: column;
@@ -88,7 +88,7 @@
         font-family: var(--font-family1);
         color: var(--color-brand-5);
         font-weight: var(--font-weight2);
-        font-size: 1.5rem;
+        font-size: clamp(1.5rem, 1.339rem + 0.734vw, 2rem);
         text-align: center;
         margin: 0;
 
@@ -101,12 +101,12 @@
         font-family: var(--font-family1);
         color: var(--grey-1);
         font-weight: var(--font-weight2);
-        font-size: 2rem;
+        font-size: clamp(2rem, 1.679rem + 1.468vw, 3rem);
         text-align: center;
         margin: 0.5rem 0;
 
         @media (min-width: 768px) {
-          font-size: 3rem;
+          font-size: clamp(2rem, 1.679rem + 1.468vw, 3rem);
           text-align: left;
         }
       }
@@ -115,11 +115,11 @@
         font-family: var(--font-family1);
         color: var(--color-brand-5);
         font-weight: var(--font-weight2);
-        font-size: 1.25rem;
+        font-size: clamp(0.8rem, 0.656rem + 0.661vw, 1.25rem);
         margin: 0;
 
         @media (min-width: 768px) {
-          font-size: 1.5rem;
+          font-size: clamp(1rem, 0.92rem + 0.367vw, 1.25rem);
         }
       }
     }
