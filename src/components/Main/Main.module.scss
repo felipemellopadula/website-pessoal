@@ -13,6 +13,8 @@
   object-fit: cover;
   padding: 2rem 1rem;
   box-sizing: border-box;
+  position: sticky;
+  top: 0;
 
   @media (min-width: 768px) {
     background-image: url("../../assets/back768_Prancheta-1.png");
